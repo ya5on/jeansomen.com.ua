@@ -1,0 +1,248 @@
+@import '../vendor/smart-grid/smart-grid.sass'
+@import 'fonts'
+@import 'variables'
+@import 'components/preloader'
+@import '../../node_modules/swiper/css/swiper.min.css'
+@import '../../node_modules/magnific-popup/dist/magnific-popup.css'
+@import 'components/aos'
+
+//General
++reset
+
+body
+  font: 16px Rubik, sans-serif
+  font-weight: 500
+  min-width: 320px
+  max-width: 1920px
+  margin: 0 auto
+  width: 100%
+  background: #fff
+  color: #000
+
+.lock
+  +sm(overflow, hidden)
+
+a
+  text-decoration: none
+
+h1
+  font-size: 42px
+  font-weight: 900
+  line-height: 55px
+  +xs(font-size, 29px)
+  +xs(line-height, 35px)
+
+h2 
+  font-size: 36px
+  line-height: 46px
+  text-align: center
+  +md(font-size, 30px)
+  +sm(font-size, 22px)
+
+h3 
+  font-size: 24px
+  +xs(font-size, 18px)
+
+h4
+  font-size: 26px
+
+h5
+  font-size: 26px
+  +lg(font-size, 22px)
+  +md(font-size, 18px)
+  +sm(margin-top, 10px)
+
+img
+  display: block
+
+.container
+  +wrapper
+
+.btn
+    text-align: center
+    display: inline-block
+    width: 100%
+    outline: none
+    cursor: pointer
+    background: transparent
+    transition: all .5s
+
+.strong
+  font-weight: 900
+
+.flex-end
+  justify-content: flex-end
+.flex-center
+  justify-content: center
+.reverse
+  +sm(flex-direction, column-reverse)
+
+.hidden
+  display: none
+
+.main-color
+  color: $main-color
+
+#scroll
+  position: fixed
+  right: 40px
+  bottom: 40px
+  cursor: pointer
+  width: 50px
+  height: 50px
+  background-color: $main-color
+  text-indent: -9999px
+  display: none
+  border-radius: 60px
+  z-index: 99999
+  +lg(display, none!important)
+
+#scroll span
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -8px
+  margin-top: -12px
+  height: 0
+  width: 0
+  border: 8px solid transparent
+  border-bottom-color: #ffffff
+
+#scroll:hover
+  background-color: #e74c3c
+  opacity: 1
+
+
+.shake
+  @-webkit-keyframes spaceboots
+    0%
+      -webkit-transform: translate(2px, 1px) rotate(0deg)
+    10%
+      -webkit-transform: translate(-1px, -2px) rotate(-.5deg)
+    20%
+      -webkit-transform: translate(-2px, 0px) rotate(.5deg)
+    30%
+      -webkit-transform: translate(0px, 2px) rotate(0deg)
+    40%
+      -webkit-transform: translate(1px, -1px) rotate(.5deg)
+    50%
+      -webkit-transform: translate(-1px, 2px) rotate(-.5deg)
+    60%
+      -webkit-transform: translate(-2px, 1px) rotate(0deg)
+    70%
+      -webkit-transform: translate(2px, 1px) rotate(-.5deg)
+    80%
+      -webkit-transform: translate(-1px, -1px) rotate(.5deg)
+    90%
+      -webkit-transform: translate(2px, 2px) rotate(0deg)
+    100%
+      -webkit-transform: translate(1px, -2px) rotate(-.5deg)
+
+.shake:hover,
+.shake:focus
+  -webkit-animation-name: spaceboots
+  -webkit-animation-duration: 1s
+  -webkit-transform-origin: 50% 50%
+  -webkit-animation-iteration-count: infinite
+  -webkit-animation-timing-function: linear
+
+@import 'components/header'
+@import 'components/about'
+@import 'components/main-slider'
+@import 'components/product'
+@import 'components/form'
+@import 'components/stock'
+@import 'components/reviews'
+@import 'components/order'
+@import 'components/footer'
+@import 'components/thanks'
+@import 'components/modal'
+@import 'components/confidentiality'
+
+button
+  appearance: none
+  background-color: transparent
+  border: 0
+  border-radius: 0
+  padding: 0
+  cursor: pointer
+  transition: 200ms
+
+.button
+  display: inline-block
+  border: 3px solid
+  outline: 0
+  position: relative
+  overflow: hidden
+  text-align: center
+  width: 100%
+  transition: 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+
+  .text
+    position: relative
+    z-index: 2
+    +sm(position, static)
+
+.button:before,
+.button:after
+  content: ''
+  display: block
+  position: absolute
+  height: 50%
+  width: 0
+  transition: 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+  z-index: 1
+
+.button:before
+  top: 0
+  left: 0
+  right: auto
+
+.button:after
+  bottom: 0
+  right: 0
+  left: auto
+
+.button:hover:before
+  width: 100%
+  right: 0
+  left: auto
+
+.button:hover:after
+  width: 100%
+  left: 0
+  right: auto
+
+.button.cta_a
+  border-color: $main-color
+
+.button.cta_a:before,
+.button.cta_a:after
+  background: #e4b172
+
+.button.cta_a:hover
+  color: #fff
+  border-color: #e4b172
+
+.button.cta_b
+  border-color: #fff
+
+.button.cta_b:before,
+.button.cta_b:after
+  background: #fff
+
+.button.cta_b:hover
+  color: #e4b172
+  border-color: #e4b172
+
+.button.cta_c
+  border-color: $main-color
+
+.button.cta_c:before,
+.button.cta_c:after
+  background: #fff
+
+.button.cta_c:hover
+  color: #e4b172
+
+

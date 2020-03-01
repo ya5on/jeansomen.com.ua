@@ -1,0 +1,62 @@
+.order
+  padding-bottom: 160px
+  +sm(padding-bottom, 40px)
+  overflow: hidden
+
+  h2
+    padding-top: 128px
+    padding-bottom: 100px
+    +md(padding-top, 50px)
+    +md(padding-bottom, 50px)
+
+    span
+      color: $main-color
+
+  &__content
+    +row-flex
+    justify-content: space-between
+    position: relative
+
+  &__item
+    +col
+    +size(3)
+    +size-md(12)
+    position: relative
+
+    .button
+      border: 3px solid $main-color
+      box-sizing: border-box
+      max-width: 270px
+      height: 70px
+      color: $main-color
+      font-size: 18px
+      font-weight: 700
+      line-height: 60px
+      +md(margin-bottom, 15px)
+
+  &__num
+      position: absolute
+      z-index: -1
+      top: -56px
+      right: -27px
+      color: $main-color
+      font-size: 121px
+      font-weight: 700
+      +lg(top, 218px)
+      +lg(right, 25px)
+      +lg(opacity, .5)
+
+  &__text
+    font-size: 18px
+    line-height: 28px
+    margin-top: 43px
+    margin-bottom: 38px
+
+  &__man
+    position: absolute
+    top: -80px
+    right: -241px
+    z-index: -1
+
+    @media (max-width: 1681px)
+      display: none

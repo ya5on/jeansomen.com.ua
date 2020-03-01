@@ -1,0 +1,93 @@
+.shop
+
+    h2
+        margin-top: 105px
+        margin-bottom: 97px
+        +md(margin-top, 50px)
+        +md(margin-bottom, 50px)
+
+        span
+            color: $main-color
+
+.main-slider
+    position: relative
+    margin-bottom: 150px
+    +md(margin-bottom, 120px)
+    +sm(margin-bottom, 100px)
+
+    &::after
+        position: absolute
+        z-index: -1
+        bottom: -55px
+        left: 71px
+        width: 355px
+        height: 382px
+        content: ''
+        border: 7px solid $main-color
+        +lg(display, none)
+
+    .swiper-container-main
+        width: 100%
+        max-width: 970px
+        height: 520px
+        margin-left: auto
+        margin-right: auto
+        position: relative
+        overflow: hidden
+        list-style: none
+        padding: 0
+        z-index: 1
+        +sm(height, auto)
+
+    .swiper-pagination-main
+        position: absolute
+        top: 0
+        right: 0
+        display: flex
+        flex-direction: column
+
+
+    .swiper-pagination-bullet
+        width: 10px
+        height: 10px
+        border-radius: 0
+        margin-bottom: 30px
+        background-color: #000
+        +lg(display, none)
+
+    .swiper-button-prev-main,
+    .swiper-button-next-main
+        position: absolute
+        display: inline-block
+        outline: none
+        width: 70px
+        height: 9px
+        bottom: -55px
+        right: 0
+        cursor: pointer
+        
+    .swiper-button-prev-main
+        background: url(/app/img/slider-buttons/prev.png) no-repeat
+        right: 100px
+
+    .swiper-button-next-main
+        background: url(/app/img/slider-buttons/next.png) no-repeat
+        
+    .swiper-button-disabled
+        filter: grayscale(100%)
+
+
+    .swiper-slide
+        img
+            transition: transform .5s ease
+
+            &:hover
+                transform: scale(1.1)
+
+
+
+
+
+
+
+

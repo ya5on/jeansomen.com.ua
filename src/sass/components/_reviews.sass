@@ -1,0 +1,136 @@
+.reviews
+  background: url("/app/img/reviews/bg-reviews.png") no-repeat center
+  background-size: cover
+  padding-bottom: 141px
+  +xs(padding-bottom, 10px)
+
+  h2
+    padding-top: 100px
+    padding-bottom: 66px
+    color: #fff
+    +md(padding-top, 50px)
+    +md(padding-bottom, 50px)
+
+    span
+      color: $main-color
+
+.reviews__slider
+  position: relative
+
+  &::after,
+  &::before
+    content: '«'
+    position: absolute
+    font-size: 150px
+    color: $main-color
+    font-weight: 900
+    +lg(display, none)
+
+  &::before
+    top: -83px
+    left: -45px
+
+  &::after
+    z-index: 2
+    bottom: -89px
+    right: -37px
+    transform: rotate(-180deg)
+
+
+  .swiper-container-reviews
+    width: 100%
+    height: 476px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    overflow: hidden
+    list-style: none
+    padding: 0
+    z-index: 1
+    +xs(height, 370px)
+
+  .swiper-slide
+    position: relative
+
+    img
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      +md(max-width, 40%)
+      +xs(display, none)
+
+  .reviews__content
+    +size(9)
+    +size-xs(12)
+    position: absolute
+    right: 0
+    bottom: 0
+    max-height: 430px
+    height: 100%
+    background-color: #fff
+    color: #000
+    font-size: 18px
+    line-height: 28px
+    +lg(line-height, 22px)
+    +md(font-size, 14px)
+    +md(line-height, 20px)
+    +sm(height, auto)
+    +sm(line-height, 1)
+    +sm(max-height, 370px)
+    +xs(position, relative)
+    +xs(width, 100%)
+
+  .reviews__text
+    padding-top: 77px
+    padding-left: 178px
+    padding-right: 100px
+    +md(padding-top, 45px)
+    +md(padding-left, 145px)
+    +md(text-align, justify)
+    +sm(padding-left, 70px)
+    +xs(padding, 20px)
+
+    p
+      margin-bottom: 27px
+
+  .swiper-pagination-reviews
+    position: absolute
+    top: 132px
+    right: 60px
+    display: flex
+    flex-direction: column
+    z-index: 10
+    +xs(display, none)
+
+  .swiper-pagination-bullet
+    width: 10px
+    height: 10px
+    border-radius: 0
+    margin-bottom: 30px!important
+    background-color: #000
+    +sm(display, none)
+
+  .swiper-button-prev-reviews,
+  .swiper-button-next-reviews
+    position: absolute
+    display: inline-block
+    outline: none
+    width: 70px
+    height: 9px
+    cursor: pointer
+    bottom: 0
+    left: 200px
+    z-index: 10
+    +md(bottom, -60px)
+    +xs(bottom, 65px)
+
+  .swiper-button-prev-reviews
+    background: url(/app/img/slider-buttons/prev.png) no-repeat
+    left: 100px
+
+  .swiper-button-next-reviews
+    background: url(/app/img/slider-buttons/next.png) no-repeat
+
+  .swiper-button-disabled
+    filter: grayscale(100%)

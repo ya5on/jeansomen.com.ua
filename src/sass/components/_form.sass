@@ -1,0 +1,117 @@
+.form
+  margin-top: 130px
+  margin-bottom: 70px
+  +md(margin-top, 90px)
+
+  &__block
+    padding: 65px 100px
+    background: $main-color url(/app/img/form/bg-form.png) no-repeat center
+    background-size: cover
+    position: relative
+    z-index: 1
+    +sm(padding, 35px 65px)
+    +xs(padding, 10px)
+
+    h4
+      color: #fff
+      margin-bottom: 44px
+
+      span
+        display: block
+        font-size: 18px
+        line-height: 20px
+        margin-top: 14px
+  img
+    position: absolute
+    top: -152px
+    right: -188px
+    z-index: -1
+
+    @media (max-width: 1546px)
+      display: none
+
+
+  &__content
+    display: flex
+    flex-wrap: nowrap
+    +lg(flex-direction, column)
+
+    .btn
+        width: 270px
+        height: 70px
+        border: 1px solid #848484
+        background-color: #fff
+        color: $main-color
+        line-height: 65px
+        font-size: 18px
+        box-sizing: border-box
+        display: inline-block
+        margin-right: 30px
+        +lg(margin-bottom, 20px)
+        +lg(width, 370px)
+        +xs(font-size, 16px)
+        +xs(width, 100%)
+
+        &::placeholder
+            color: $main-color
+            transition: text-indent 0.3s ease
+
+
+    .btn--sub
+      width: 370px
+      height: 70px
+      border: 3px solid #fff
+      color: #fff
+      background-color: $main-color
+      line-height: 65px
+      font-size: 18px
+      box-sizing: border-box
+      font-weight: 700
+      +sm(line-height, 18px)
+      +xs(font-size, 16px)
+      +xs(width, 100%)
+
+
+input:focus::-webkit-input-placeholder
+  text-indent: 700px
+  transition: text-indent 0.3s ease
+
+input:focus::-moz-placeholder
+    text-indent: 700px
+    transition: text-indent 0.3s ease
+
+input:focus:-moz-placeholder
+    text-indent: 700px
+    transition: text-indent 0.3s ease
+
+input:focus:-ms-input-placeholder
+    text-indent: 700px
+    transition: text-indent 0.3s ease
+
+.shake-content
+  animation: shake 2s cubic-bezier(.36,.07,.19,.97) both infinite
+  transform: translate(0, 0)
+
+@-webkit-keyframes shake
+  0%
+    -webkit-transform: translate(2px, 1px) rotate(0deg)
+  10%
+    -webkit-transform: translate(-1px, -2px) rotate(-.5deg)
+  20%
+    -webkit-transform: translate(-2px, 0px) rotate(.5deg)
+  30%
+    -webkit-transform: translate(0px, 2px) rotate(0deg)
+  40%
+    -webkit-transform: translate(1px, -1px) rotate(.5deg)
+  50%
+    -webkit-transform: translate(-1px, 2px) rotate(-.5deg)
+  60%
+    -webkit-transform: translate(-2px, 1px) rotate(0deg)
+  70%
+    -webkit-transform: translate(2px, 1px) rotate(-.5deg)
+  80%
+    -webkit-transform: translate(-1px, -1px) rotate(.5deg)
+  90%
+    -webkit-transform: translate(2px, 2px) rotate(0deg)
+  100%
+    -webkit-transform: translate(1px, -2px) rotate(-.5deg)

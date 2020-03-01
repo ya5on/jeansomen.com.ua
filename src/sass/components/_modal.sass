@@ -1,0 +1,72 @@
+.form-block
+    margin: auto
+    width: 100%
+    max-width: 270px
+    padding: 40px 50px
+    position: relative
+    color: #000
+    background-color: #fff
+    +sm(max-width, 210px)
+    +sm(padding, 20px 25px)
+
+    h3
+        color: $main-color
+        font-weight: 900
+
+    p
+        color: #000F36
+        font-size: 17px
+        line-height: 24px
+        font-weight: 700
+        margin-bottom: 40px
+        +sm(font-size, 15px)
+        +sm(line-height, 15px)
+        +sm(margin-bottom, 20px)
+
+    form
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        max-width: 270px
+        width: 100%
+
+        input
+            height: 55px
+            display: inline-block
+            width: 100%
+            box-sizing: border-box
+            font-size: 16px
+            border: 1px solid $main-color
+            outline: none
+            cursor: pointer
+            color: #000
+            margin-bottom: 10px
+            text-indent: 25px
+            +lg(font-size, 14px)
+            +lg(height, 45px)
+            +md(height, 35px)
+            +md(margin, 5px)
+            +md(font-size, 12px)
+
+            &::placeholder
+                color: $main-color
+
+        .button
+            width: 100%
+            font-size: 18px
+            color: #fff
+            font-weight: 700
+            height: 55px
+            line-height: 50px
+            border: 2px solid #fff
+            background: $main-color
+            box-shadow: 1px 2px 7px 2px rgba(0,0,0,0.35)
+            +sm(font-size, 16px)
+
+.btn-close
+    width: 40px
+    height: 40px
+    position: absolute
+    opacity: 1
+

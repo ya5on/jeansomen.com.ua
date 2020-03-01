@@ -1,0 +1,141 @@
+.stock
+  margin-bottom: 80px
+
+  &__title
+    font-size: 100px
+    color: $main-color
+    margin-bottom: 23px
+    +lg(font-size, 80px)
+
+  &__items
+    +row-flex
+
+  &__item
+    +col
+    +size(4)
+    +size-md(12)
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    position: relative
+    +lg(justify-content, center)
+    +md(align-items, center)
+    +md(margin, 0 150px)
+    +sm(margin, 0 auto)
+
+
+
+    h4
+      span
+        display: inline-block
+        color: $main-color
+        margin-bottom: 67px
+        font-weight: 700
+    p
+      position: absolute
+      z-index: -1
+      top: 162px
+      left: 142px
+      font-size: 188px
+      color: #F5F5F5
+      font-weight: 900
+      line-height: 266px
+      transform: rotate(-90deg)
+      +md(transform, rotate(-45deg))
+      +md(top, 42px)
+      +md(left, 60px)
+      +sm(display, none)
+
+    .button
+      font-size: 18px
+      font-weight: 700
+      background-color: $main-color
+      height: 65px
+      max-width: 370px
+      width: 100%
+      color: #fff
+      margin-bottom: 32px
+      +md(max-width, 270px)
+      +md(font-size, 16px)
+      +md(height, 56px)
+
+      span
+        display: flex
+        flex-direction: column
+        margin-top: 7px
+        +md(margin-top, 5px)
+
+  &__slider
+    +col
+    +size(8)
+    position: relative
+    +md(display, none)
+
+  .swiper-container-stock
+    width: 100%
+    max-width: 810px
+    height: 750px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    overflow: hidden
+    list-style: none
+    padding: 0
+
+    &::before
+      content: ''
+      width: 660px
+      height: 515px
+      background-color: #FEF6EC
+      position: absolute
+      z-index: -1
+      bottom: 92px
+      left: 10px
+
+    &::after
+      content: ''
+      width: 368px
+      height: 395px
+      border: 7px solid $main-color
+      position: absolute
+      z-index: -2
+      top: 108px
+      right: 68px
+
+  .swiper-pagination-stock
+      position: absolute
+      top: 135px
+      right: 0
+      z-index: 999
+      display: flex
+      flex-direction: column
+
+
+  .swiper-pagination-bullet
+      width: 10px
+      height: 10px
+      border-radius: 0
+      margin-bottom: 30px
+      background-color: #000
+
+  .swiper-button-prev-stock,
+  .swiper-button-next-stock
+      position: absolute
+      display: inline-block
+      outline: none
+      width: 70px
+      height: 9px
+      bottom: 40px
+      right: -1px
+      z-index: 999
+      cursor: pointer
+
+  .swiper-button-prev-stock
+      background: url(/app/img/slider-buttons/prev.png) no-repeat
+      right: 86px
+
+  .swiper-button-next-stock
+      background: url(/app/img/slider-buttons/next.png) no-repeat
+
+  .swiper-button-disabled
+      opacity: .4

@@ -1,0 +1,167 @@
+.about
+  background: url("/app/img/about/about.jpg") no-repeat center 190px
+  background-size: cover
+  +md(background-position, 0)
+
+  h2
+    margin-top: 66px
+    margin-bottom: 49px
+    +md(margin-top, 0)
+    +md(margin-bottom, 0)
+    +md(padding-top, 55px)
+    +md(padding-bottom, 35px)
+    +md(color, #fff)
+
+    span
+      color: $main-color
+  
+  &__box
+    +row-flex
+    justify-content: space-between
+
+    &--left
+      margin-top: 125px
+    h5
+      line-height: 44px
+      +md(line-height, 25px)
+
+    &--right
+      margin-top: 16px
+
+    &--bottom
+      margin-top: -60px
+      padding-bottom: 183px
+      +md(padding-bottom, 90px)
+
+  &__picture
+    +col
+    +size(6)
+    +size-sm(12)
+
+    &--1
+      position: relative
+      z-index: 2
+      +md(position, static)
+      +md(z-index, 0)
+
+      &::after
+        position: absolute
+        z-index: -1
+        bottom: -31px
+        left: -30px
+        width: 355px
+        height: 204px
+        content: ''
+        border: 7px solid #fff
+        +lg(display, none)
+
+    &--2
+      position: relative
+      z-index: 2
+      margin-top: 16px
+      +md(position, static)
+      +md(z-index, 0)
+
+      &::after
+        position: absolute
+        z-index: -1
+        right: -30px
+        bottom: 27px
+        width: 357px
+        height: 400px
+        content: ''
+        border: 7px solid $main-color
+        +lg(display, none)
+
+    &--3
+      position: relative
+      z-index: 2
+      +md(position, static)
+      +md(z-index, 0)
+
+      &::after
+        position: absolute
+        z-index: -1
+        bottom: 47px
+        left: -73px
+        width: 400px
+        height: 400px
+        content: ''
+        border: 7px solid #fff
+        +lg(display, none)
+
+    &--4
+      position: relative
+      z-index: 2
+      display: flex
+      justify-content: flex-end
+      +md(position, static)
+      +md(z-index, 0)
+      +sm(justify-content, flex-start)
+
+      &::after
+        position: absolute
+        z-index: -1
+        bottom: -30px
+        left: 71px
+        width: 355px
+        height: 382px
+        content: ''
+        border: 7px solid $main-color
+        +lg(display, none)
+
+  &__text
+    +col
+    +size(6)
+    +size-sm(12)
+    display: flex
+    flex-direction: column
+    color: #fff
+    position: relative
+    +md(position, static)
+
+    br
+      +sm(display, none)
+    
+    p
+      margin-top: 22px
+      margin-bottom: 41px
+      font-size: 18px
+      line-height: 28px
+      +lg(font-size, 16px)
+      +md(margin-top, 10px)
+      +md(font-size, 14px)
+      +md(line-height, 22px)
+
+
+  &__subtitle
+    display: block
+    position: absolute
+    z-index: 3
+    top: 45px
+    left: -100px
+    color: #000
+    background: transparent
+    +lg(display, none)
+
+    h5
+      display: inline-block
+      background: #fff
+      padding-left: 25px
+      padding-right: 25px
+      margin-bottom: 6px
+      white-space: nowrap
+      line-height: 40px
+      +md(line-height, 32px)
+
+  .button
+    max-width: 365px
+    height: 65px
+    border: 3px solid $main-color
+    color: $main-color
+    line-height: 65px
+    font-size: 18px
+    font-weight: 700
+    
+.sm-padding
+  +sm(padding-bottom, 70px)

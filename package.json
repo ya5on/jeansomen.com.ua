@@ -36,6 +36,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bounds.js": "^1.0.4",
+    "lazysizes": "^5.2.0",
     "magnific-popup": "^1.1.0",
     "swiper": "^5.3.1"
   }

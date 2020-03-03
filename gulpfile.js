@@ -73,8 +73,7 @@ function libs() {
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/swiper/js/swiper.min.js',
             'node_modules/aos/dist/aos.js',
-            'node_modules/lazysizes/lazysizes.min.js',
-            'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'
+            'node_modules/lazysizes/lazysizes.min.js'
         ])
         // .pipe(babel({
         //     presets: ['@babel/env']

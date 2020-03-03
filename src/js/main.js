@@ -10,6 +10,8 @@ window.addEventListener('load', AOS.refresh);
 
 
 $(document).ready(function () {
+
+    // scroll to------------------
     $('.menu__list a').on('click', function () {
         $('html, body').stop().animate({
             scrollTop: $($(this).attr('href')).offset().top - 0
@@ -228,23 +230,5 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev-reviews',
         },
     });
-
-    //mgp---popup---------------
-    $('.modal').magnificPopup({
-        type: 'inline',
-        preloader: false,
-        focus: '#name',
-
-        callbacks: {
-            beforeOpen: function () {
-                if ($(window).width() < 700) {
-                    this.st.focus = false;
-                } else {
-                    this.st.focus = '#name';
-                }
-            }
-        }
-    });
-    //mgp---popup---------------end
 
 });

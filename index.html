@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="index,follow">
+<!--    <meta name="robots" content="index,follow">-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Продажа мужских джинсов и брюк.</title>
     <link rel="stylesheet" href="/app/css/style.css">
@@ -12,6 +12,7 @@
 <!--    <div class="linePreloader">-->
 <!--    </div>-->
 <!--</div>-->
+<div class="form-container hidden"></div>
 <!-- HEADER -->
 <header class="header"
         data-aos="fade-right"
@@ -29,7 +30,7 @@
             </div>
             <div class="header__right">
                 <a href="tel:+380501233423" class="phone shake">+38 050 123 34 23</a>
-                <a class="button cta_a modal" href="#callback"><span class="text">Давайте мы перезвоним</span></a>
+                <button class="button cta_a btn-callback"><span class="text">Давайте мы перезвоним</span></button>
             </div>
         </div>
         <div class="header__content">
@@ -90,11 +91,10 @@
             <!-- //NAVIGATION -->
         </div>
         <div class="header__buttons">
-            <a href="#stockDetails" class="button cta_a button--1 modal" data-aos="fade-right" data-aos-delay="1500"
-               data-aos-duration="2000"><span class="text">Узнать детали акции</span></a>
-            <a href="#getCatalog" class="button cta_b button--2 modal" data-aos="fade-right" data-aos-delay="1600"
-               data-aos-duration="2000"><span
-                    class="text">Получить фотокаталог продукции</span></a>
+            <button class="button cta_a button--1 btn-stockDetails" data-aos="fade-right" data-aos-delay="1500"
+               data-aos-duration="2000"><span class="text">Узнать детали акции</span></button>
+            <button class="button cta_b button--2 btn-getCatalog" data-aos="fade-right" data-aos-delay="1600"
+               data-aos-duration="2000"><span class="text">Получить фотокаталог продукции</span></button>
         </div>
 
     </div>
@@ -132,8 +132,9 @@
                     который соответствует последним модным тенденциям
                     текущего сезона.</p>
 
-                <a href="#getConsult" class="button cta_c modal" data-aos="zoom-in-down" data-aos-delay="1100"
-                   data-aos-duration="1000"><span class="text">Получить консультацию</span></a>
+                <button class="button cta_c btn-getConsult" data-aos="zoom-in-down" data-aos-delay="1100"
+                   data-aos-duration="1000"><span class="text">Получить консультацию</span></button>
+
                 <div class="about__subtitle"
                      data-aos="fade-left"
                      data-aos-delay="900"
@@ -206,10 +207,10 @@
                     для демонстрации и доставки продукции. Чтобы
                     Вы могли ознакомиться с ассортиментом и качеством продукции, <br>
                     и приобрести необходимый Вам ассортимент товара.</p>
-                <a href="#getMore" class="button cta_c modal"
+                <button class="button cta_c btn-getMore"
                    data-aos="fade-up"
                    data-aos-delay="900"
-                   data-aos-duration="1000"><span class="text">Узнать подробнее</span></a>
+                   data-aos-duration="1000"><span class="text">Узнать подробнее</span></button>
             </div>
             <div class="about__picture about__picture--4"
                  data-aos="fade-left"
@@ -267,7 +268,6 @@
 <section class="product" id="product">
     <h2>Выбирайте из <span>более 500 моделей,</span><br>которые всегда в наличии на складе</h2>
     <div class="container">
-
         <div class="product__items">
             <div class="product__item">
                 <div class="swiper-container-1 swiper-box">
@@ -310,7 +310,7 @@
                     <div class="swiper-button-next-1 button-next"></div>
                 </div>
                 <h4>Джинсы <br> <span>...и еще более 300 моделей</span></h4>
-                <a href="#jeans" class="button cta_c modal"><span class="text">Узнать стоимость</span></a>
+                <button class="button cta_c btn-jeans"><span class="text">Узнать стоимость</span></button>
             </div>
 
             <div class="product__item">
@@ -354,7 +354,7 @@
                     <div class="swiper-button-next-2 button-next"></div>
                 </div>
                 <h4>Джинсы на флисе <br> <span>...и еще более 50 моделей</span></h4>
-                <a href="#jeansFleece" class="button cta_c modal"><span class="text">Узнать стоимость</span></a>
+                <button class="button cta_c btn-jeansFleece"><span class="text">Узнать стоимость</span></button>
             </div>
         </div>
 
@@ -400,7 +400,7 @@
                     <div class="swiper-button-next-3 button-next"></div>
                 </div>
                 <h4>Брюки классические <br> <span>...и еще более 300 моделей</span></h4>
-                <a href="#jeansClassic" class="button cta_c modal"><span class="text">Узнать стоимость</span></a>
+                <button class="button cta_c btn-jeansClassic"><span class="text">Узнать стоимость</span></button>
             </div>
 
             <div class="product__item">
@@ -444,7 +444,7 @@
                     <div class="swiper-button-next-4 button-next"></div>
                 </div>
                 <h4>Коммандо <br> <span>...и еще более 50 моделей</span></h4>
-                <a href="#jeansCommando" class="button cta_c modal"><span class="text">Узнать стоимость</span></a>
+                <button class="button cta_c btn-jeansCommando"><span class="text">Узнать стоимость</span></button>
             </div>
         </div>
         <div class="product__items">
@@ -489,7 +489,7 @@
                     <div class="swiper-button-next-5 button-next"></div>
                 </div>
                 <h4>Штаны вельветовые <br> <span>...и еще более 150 моделей</span></h4>
-                <a href="#jeansCuffs" class="button cta_c modal"><span class="text">Узнать стоимость</span></a>
+                <button class="button cta_c btn-jeansCuffs"><span class="text">Узнать стоимость</span></button>
             </div>
 
             <div class="product__item">
@@ -533,7 +533,7 @@
                     <div class="swiper-button-next-6 button-next"></div>
                 </div>
                 <h4>Джинсовые куртки <br> <span>...и еще более 30 моделей</span></h4>
-                <a href="#jeansBlazers" class="button cta_c modal"><span class="text">Узнать стоимость</span></a>
+                <button class="button cta_c btn-jeansBlazers"><span class="text">Узнать стоимость</span></button>
             </div>
         </div>
     </div>
@@ -566,8 +566,7 @@
             <div class="stock__item">
                 <h6 class="stock__title">Акция!</h6>
                 <h4>Скидки на актуальные<br> модели <span>до - 50%</span></h4>
-                <a href="#stockForm" class="button cta_b modal"><span class="text">Получить фотокаталог</span><span
-                        class="text">со скидкой до - 50%</span></a>
+                <button class="button cta_b btn-stockForm"><span class="text">Получить фотокаталог</span><span class="text">со скидкой до - 50%</span></button>
                 <p>-50%</p>
             </div>
             <div class="stock__slider">
@@ -669,10 +668,10 @@
                    data-aos-duration="1000"
                    data-aos-easing="ease-in-sine">Оставляйте заявку, и наш специалист свяжется с Вами
                     в течение 15 мин, чтобы проконсультировать Вас.</p>
-                <a href="#orderForm" class="button cta_a modal"
+                <button class="button cta_a btn-orderForm"
                    data-aos="fade-right"
                    data-aos-delay="500"
-                   data-aos-duration="1000"><span class="text">Оставить заявку</span></a>
+                   data-aos-duration="1000"><span class="text">Оставить заявку</span></button>
                 <span class="order__num"
                       data-aos="fade-in"
                       data-aos-delay="500"
@@ -752,13 +751,13 @@
 
                 <div>
                     <a class="footer__tel" href="tel:+380501233423">+38 050 123 34 23</a>
-                    <a class="footer__tel" href="mailto:mail@jeansomen.com">mail@jeansomen.com</a>
+                    <a class="footer__tel" href="mailto:jeansomen.com@gmail.com">jeansomen.com@gmail.com</a>
                 </div>
 
                 <p><span>Остались вопросы? <br></span>
                     Наш специалист ответит на них
                     в течение 15 минут.</p>
-                <a href="#orderForm" class="button cta_c modal"><span class="text">Оставить заявку</span></a>
+                <button class="button cta_c btn-questions"><span class="text">Задать вопрос</span></button>
             </div>
         </div>
         <div class="footer__content">
@@ -766,8 +765,9 @@
                 <img alt="Лого" src="/app/img/logo.png">
             </div>
             <div class="footer__item footer__item--2">
-                <p class="footer__content--politics"><a class="modal" href="#confidentiality">Политика
-                    конфиденциальности</a></p>
+                <p class="footer__content--politics">
+                    <button class="btn-politics">Политика конфиденциальности</button>
+                </p>
                 <p class="footer__content--copyright">&copy;
                     <script>document.write(new Date().getFullYear());</script>
                     “Jeans”. Все права защищены
@@ -783,270 +783,6 @@
 <!--//FOOTER-->
 
 <a href="#" id="scroll" style="display: none;"><span></span></a>
-
-
-<!-- modal -->
-<div class="hidden">
-    <div class="form-block" id="callback">
-        <h3>Заполните форму,</h3>
-        <p>и наш менеджер перезвонит Вам в течение 15 мин, чтобы ответить на все вопросы</p>
-        <form method="post" id="callbackForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Перезвоните мне"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Перезвоните мне</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="stockDetails">
-        <h3>Заполните форму,</h3>
-        <p>чтобы узнать детали акции в течение 15 минут</p>
-        <form method="post" id="stockDetailsForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Узнать детали акции"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Узнать детали акции</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="getCatalog">
-        <h3>Заполните форму,</h3>
-        <p>чтобы получить фотокаталог в течение 15 минут</p>
-        <form method="post" id="getCatalogForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Получить фотокаталог продукции"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="email" type="email" placeholder="Ваш e-mail" required=""/>
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Получить фотокаталог</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="getConsult">
-        <h3>Заполните форму,</h3>
-        <p>чтобы получить консультацию, и наш менеджер свяжется с Вами в течение 15 мин</p>
-        <form method="post" id="getConsultForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Получить консультацию"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Получить консультацию</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="getMore">
-        <h3>Заполните форму,</h3>
-        <p>чтобы узнать подробнее, и наш менеджер свяжется с Вами в течение 15 мин</p>
-        <form method="post" id="getMoreForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Узнать подробнее"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Узнать подробнее</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="jeans">
-        <h3>Заполните форму,</h3>
-        <p>чтобы узнать стоимость, и наш менеджер свяжется с Вами в течение 15 мин</p>
-        <form method="post" id="jeansForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Джинсы обычные"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Узнать стоимость</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="jeansFleece">
-        <h3>Заполните форму,</h3>
-        <p>чтобы узнать стоимость, и наш менеджер свяжется с Вами в течение 15 мин</p>
-        <form method="post" id="jeansFleeceForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Джинсы на флисе"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Узнать стоимость</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="jeansClassic">
-        <h3>Заполните форму,</h3>
-        <p>чтобы узнать стоимость, и наш менеджер свяжется с Вами в течение 15 мин</p>
-        <form method="post" id="jeansClassicForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Джинсы на классические"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Узнать стоимость</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="jeansCommando">
-        <h3>Заполните форму,</h3>
-        <p>чтобы узнать стоимость, и наш менеджер свяжется с Вами в течение 15 мин</p>
-        <form method="post" id="jeansCommandoForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Джинсы на коммандо"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Узнать стоимость</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="jeansCuffs">
-        <h3>Заполните форму,</h3>
-        <p>чтобы узнать стоимость, и наш менеджер свяжется с Вами в течение 15 мин</p>
-        <form method="post" id="jeansCuffsForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Штаны вельветовые"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Узнать стоимость</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="jeansBlazers">
-        <h3>Заполните форму,</h3>
-        <p>чтобы узнать стоимость, и наш менеджер свяжется с Вами в течение 15 мин</p>
-        <form method="post" id="jeansBlazersForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Джинсовые куртки"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Узнать стоимость</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="stockForm">
-        <h3>Заполните форму,</h3>
-        <p>чтобы получить фотокаталог со скидкой до - 50% на Вашу почту в течение 15 минут</p>
-        <form method="post" id="stockFormForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Скидки на актуальные модели до - 50%"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="email" type="email" placeholder="Ваш e-mail" required=""/>
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Получить фотокаталог</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="form-block" id="orderForm">
-        <h3>Заполните форму,</h3>
-        <p>чтобы оставить заявку, и наш менеджер свяжется с Вами в течение 15 минут</p>
-        <form method="post" id="orderFormForm" action="mail.php">
-            <input type="hidden" name="whatform" value="Форма - Сделать у нас заказ очень просто"/>
-            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">
-            <input name="phone" type="tel" placeholder="Ваш телефон" required="">
-            <button class="button cta_b" type="submit"><span class="text">Оставить заявку</span></button>
-        </form>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<div class="hidden">
-    <div class="confidentiality" id="confidentiality">
-        <div class="confidentiality__text"> Ваша конфіденційність дуже важлива для нас. Ми хочемо, щоб Ваша робота в
-            Інтернет по можливості була максимально приємною і корисною, і Ви абсолютно спокійно використовували
-            найширший спектр інформації, інструментів і можливостей, які пропонує Інтернет.
-        </div>
-
-        <div class="confidentiality__text">Особиста інформація Членів, зібрана при реєстрації (або в будь-який інший
-            час) переважно використовується для підготовки Продуктів або Послуг відповідно до Ваших потреб. Ваша
-            інформація не буде передана або продана третім сторонам. Однак ми можемо частково розкривати особисту
-            інформацію в особливих випадках, описаних в «Згоду з розсилкою»
-        </div>
-
-        <div class="confidentiality__text"><span>Які дані збираються на сайті </span> <br> При добровільної реєстрації
-            на отримання розсилки «Інсайдер інтернет підприємця» ви відправляєте своє Ім'я та E-mail через форму
-            реєстрації.
-        </div>
-
-        <div class="confidentiality__text"><span>З якою метою збираються ці дані </span> <br> Ім'я використовується для
-            звернення особисто до вас, а ваш e-mail для відправки вам листів розсилок, новин тренінгу, корисних
-            матеріалів, комерційних пропозицій. Ваші ім'я та e-mail не передаються третім особам, ні за яких умов крім
-            випадків, пов'язаних з виконанням вимог законодавства. Ваше ім & # 39; я і e-mail на захищених серверах
-            сервісу getresponse.com і використовуються відповідно до його політикою конфіденційності.
-        </div>
-
-        <div class="confidentiality__text">Ви можете відмовитися від отримання листів розсилки і видалити з бази даних
-            свої контактні дані в будь-який момент, клікнувши на посилання для відписки, присутню в кожному листі.
-        </div>
-
-        <div class="confidentiality__text"><span>Як ці дані використовуються </span> <br> На сайті використовуються куки
-            (Cookies) і дані про відвідувачів сервісу Google Analytics.
-        </div>
-
-        <div class="confidentiality__text">За допомогою цих даних збирається інформація про дії відвідувачів на сайті з
-            метою поліпшення його змісту, поліпшення функціональних можливостей сайту і, як наслідок, створення якісного
-            контенту і сервісів для відвідувачів.
-        </div>
-
-        <div class="confidentiality__text">Ви можете в будь-який момент змінити налаштування свого браузера так, щоб
-            браузер блокував всі файли cookie або оповіщає про відправку цих файлів. Врахуйте при цьому, що деякі
-            функції і сервіси не зможуть працювати належним чином.
-        </div>
-
-        <div class="confidentiality__text"><span>Як ці дані захищаються </span><br> Для захисту Вашої особистої інформації
-            ми використовуємо різноманітні адміністративні, управлінські та технічні заходи безпеки. Наша Компанія
-            дотримується різних міжнародних стандартів контролю, спрямованих на операції з особистою інформацією, які
-            включають певні заходи контролю щодо захисту інформації, зібраної в Інтернет.
-        </div>
-
-        <div class="confidentiality__text">Наших співробітників навчають розуміти і виконувати ці заходи контролю, вони
-            ознайомлені з нашим Повідомленням про конфіденційність, норм та інструкцій.
-        </div>
-
-        <div class="confidentiality__text">Проте, не дивлячись на те, що ми прагнемо убезпечити Вашу особисту
-            інформацію, Ви теж повинні вживати заходів, щоб захистити її.
-        </div>
-
-        <div class="confidentiality__text">Ми настійно рекомендуємо Вам вживати всіх можливих заходів обережності під
-            час перебування в Інтернеті. Організовані нами послуги і веб-сайти передбачають заходи щодо захисту від
-            витоку, несанкціонованого використання і зміни інформації, яку ми контролюємо. Незважаючи на те, що ми
-            робимо все можливе, щоб забезпечити цілісність і безпеку своєї мережі і систем, ми не можемо гарантувати, що
-            наші заходи безпеки допоможуть запобігти незаконний доступ до цієї інформації хакерів сторонніх організацій.
-        </div>
-
-        <div class="confidentiality__text">У разі зміни цієї політики конфіденційності ви зможете прочитати про ці зміни
-            на цій сторінці або, в особливих випадках, отримати повідомлення на свій e-mail.
-        </div>
-
-        <div class="confidentiality__text">Для зв'язку з адміністратором сайту з будь-яких питань ви можете написати
-            лист на e-mail: jeansomen.com@gmail.com
-        </div>
-        <button type="button" class="btn-close mfp-close">×</button>
-    </div>
-</div>
-
-<!-- //modal -->
-
 
 
 <script src="/app/js/libs.js"></script>

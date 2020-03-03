@@ -3,8 +3,19 @@
 @import 'variables'
 @import 'components/preloader'
 @import '../../node_modules/swiper/css/swiper.min.css'
-@import '../../node_modules/magnific-popup/dist/magnific-popup.css'
 @import 'components/aos'
+@import 'components/modal'
+@import 'sections/header'
+@import 'sections/about'
+@import 'sections/main-slider'
+@import 'sections/product'
+@import 'sections/form'
+@import 'sections/stock'
+@import 'sections/reviews'
+@import 'sections/order'
+@import 'sections/footer'
+@import 'sections/thanks'
+@import 'sections/politics'
 
 //General
 +reset
@@ -80,9 +91,13 @@ img
 .hidden
   display: none
 
+.lock
+  overflow: hidden
+
 .main-color
   color: $main-color
 
+//btn to top------------------
 #scroll
   position: fixed
   right: 40px
@@ -111,8 +126,7 @@ img
 #scroll:hover
   background-color: #e74c3c
   opacity: 1
-
-
+//----------------------------
 .shake
   @-webkit-keyframes spaceboots
     0%
@@ -146,19 +160,7 @@ img
   -webkit-animation-iteration-count: infinite
   -webkit-animation-timing-function: linear
 
-@import 'components/header'
-@import 'components/about'
-@import 'components/main-slider'
-@import 'components/product'
-@import 'components/form'
-@import 'components/stock'
-@import 'components/reviews'
-@import 'components/order'
-@import 'components/footer'
-@import 'components/thanks'
-@import 'components/modal'
-@import 'components/confidentiality'
-
+//buttons, hover
 button
   appearance: none
   background-color: transparent

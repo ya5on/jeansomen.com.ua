@@ -89,6 +89,12 @@
     .swiper-button-disabled
       filter: grayscale(100%)
 
+  .swiper-slide
+    img
+      transition: transform .5s ease
+
+      &:hover
+        transform: scale(1.1)
 
 .slider__btn
   height: 70px
